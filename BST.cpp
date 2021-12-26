@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//SINGLE BST NODE STRUCT
 struct node {
 	int data;
 	node* left;
@@ -13,6 +14,7 @@ struct node {
   }
 };
 
+//CREAT/ADD BST NODE FUNCTION
 node* addBST(node* root, int val) {
 	if (root==NULL) {
 		return new node(val);
@@ -26,6 +28,7 @@ node* addBST(node* root, int val) {
 	return root;
 }
 
+//FUNCTION FOR INORDER TRAVERSAL
 void Inorder(node* root) {
 	if (root==NULL) {
         return;
@@ -35,6 +38,7 @@ void Inorder(node* root) {
     Inorder(root->right);
 }
 
+//DRIVER CODE
 int main() {
 	node* root=NULL;
 	root=addBST(root, 1);
