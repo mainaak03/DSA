@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//BINARY SEARCH
 int bs(int arr[], int n, int k, int l, int r) {
     while (l<=r) {
         int mid = (l+r)/2;
@@ -17,6 +18,7 @@ int bs(int arr[], int n, int k, int l, int r) {
     return -1;
 }
 
+//DRIVER CODE
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
